@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1144582400,
+              "duration": 1129713600,
               "status": "passed"
             },
             "line": 5,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 1990687700,
+              "duration": 1932657300,
               "status": "passed"
             },
             "match": {
@@ -39,12 +39,23 @@
         "name": "User should be able to login with valid credentials and open a new account",
         "description": "",
         "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials-and-open-a-new-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 663904600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankAndCashStepDef.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 145715900,
+              "duration": 150645500,
               "status": "passed"
             },
             "line": 10,
@@ -70,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 1262998700,
+              "duration": 2453016600,
               "status": "passed"
             },
             "line": 11,
@@ -82,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 7657600,
+              "duration": 445531500,
               "status": "passed"
             },
             "line": 12,
@@ -94,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 53139400,
+              "duration": 153495100,
               "status": "passed"
             },
             "line": 13,
@@ -106,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 666034100,
+              "duration": 783539300,
               "status": "passed"
             },
             "line": 14,
@@ -118,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 1308495000,
+              "duration": 1289950200,
               "status": "passed"
             },
             "line": 15,
@@ -154,7 +165,7 @@
                   "offset": 119
                 }
               ],
-              "location": "BankAndCashStepDef.user_fill_up_the_form_entering_details(String,String,String,String,String,String,String)"
+              "location": "BankAndCashStepDef.user_fill_up_the_form_entering_details(String,String,String,int,String,int,String)"
             },
             "matchedColumns": [
               3,
@@ -169,7 +180,7 @@
           },
           {
             "result": {
-              "duration": 6823400,
+              "duration": 272130700,
               "status": "passed"
             },
             "line": 16,

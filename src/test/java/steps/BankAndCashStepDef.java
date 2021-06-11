@@ -66,7 +66,7 @@ public class BankAndCashStepDef {
 	}
     @When("^User fill up the form entering \"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and clicks submit$")
 	public void user_fill_up_the_form_entering_details(String accountTitle, String description, String initialBalance,
-			String accountNumber, String contactPerson, String phone, String internetBankingUrl) throws Throwable {
+			int accountNumber, String contactPerson, int phone, String internetBankingUrl) throws Throwable {
 		bankandcash.enterAccountTitle(accountTitle);
 		bankandcash.enterDescriptionField(description);
 		bankandcash.enterIntialBalance(initialBalance);
@@ -83,7 +83,10 @@ public class BankAndCashStepDef {
 		String actualTitle = bankandcash.getPageTitle();
 		Assert.assertEquals(expectedTitle, actualTitle);
 		bankandcash.takeScreenshotAtEndOfTest(driver);
-	
-
+	}
+	@After
+	public void tearDown() {
+		driver.close();
+		driver.quit();
 	}
 }

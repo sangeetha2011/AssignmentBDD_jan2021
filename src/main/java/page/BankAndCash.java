@@ -71,16 +71,20 @@ public class BankAndCash extends BasePage  {
 		INITIAL_BALANCE_FIELD.sendKeys(balance);
 	}
 
-	public void enterAccountNumber(String accountnumber) {
-		ACCOUNT_NUMBER_FIELD.sendKeys(accountnumber+randomNumber(999));
+	public void enterAccountNumber(int accountnumber) {
+		String acNum ;
+		acNum = String.valueOf(accountnumber);
+		ACCOUNT_NUMBER_FIELD.sendKeys(acNum+randomNumber(999));
 	}
 
 	public void enterContactPerson(String contactPerson) {
 		CONTACT_PERSON_FIELD.sendKeys(contactPerson);
 	}
 
-	public void enterContactNumber(String contactNumber) {
-		CONTACT_PHONE_FIELD.sendKeys(contactNumber+randomNumber(999));
+	public void enterContactNumber(int contactNumber) {
+		 String phnum;
+		 phnum = String.valueOf(contactNumber);
+		CONTACT_PHONE_FIELD.sendKeys(phnum +randomNumber(999));
 	}
 
 	public void enterInternetBankingUrlField(String bankingurl) {

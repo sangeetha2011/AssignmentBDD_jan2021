@@ -51,7 +51,11 @@ public class LoginStepDef   {
 		Assert.assertEquals(expectedTitle, actualTitle);
 		loginpage.takeScreenshotAtEndOfTest(driver);
 	}
-	
+	//@After
+	public void tearDown() {
+		driver.close();
+		driver.quit();
+	}
 	
 
 }

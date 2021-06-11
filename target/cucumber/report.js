@@ -97,7 +97,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1990687700,
+  "duration": 1932657300,
   "status": "passed"
 });
 formatter.background({
@@ -116,7 +116,7 @@ formatter.match({
   "location": "BankAndCashStepDef.user_is_on_the_techfios_login_page()"
 });
 formatter.result({
-  "duration": 1144582400,
+  "duration": 1129713600,
   "status": "passed"
 });
 formatter.scenario({
@@ -195,35 +195,35 @@ formatter.match({
   "location": "BankAndCashStepDef.user_enters_the_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 145715900,
+  "duration": 150645500,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_click_on_the_signin_button()"
 });
 formatter.result({
-  "duration": 1262998700,
+  "duration": 2453016600,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_should_land_on_the_Dashboard_page()"
 });
 formatter.result({
-  "duration": 7657600,
+  "duration": 445531500,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_clicks_on_the_bank_and_cash()"
 });
 formatter.result({
-  "duration": 53139400,
+  "duration": 153495100,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_clicks_on_new_account()"
 });
 formatter.result({
-  "duration": 666034100,
+  "duration": 783539300,
   "status": "passed"
 });
 formatter.match({
@@ -257,17 +257,21 @@ formatter.match({
       "offset": 119
     }
   ],
-  "location": "BankAndCashStepDef.user_fill_up_the_form_entering_details(String,String,String,String,String,String,String)"
+  "location": "BankAndCashStepDef.user_fill_up_the_form_entering_details(String,String,String,int,String,int,String)"
 });
 formatter.result({
-  "duration": 1308495000,
+  "duration": 1289950200,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_should_be_able_to_see_validate()"
 });
 formatter.result({
-  "duration": 6823400,
+  "duration": 272130700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 663904600,
   "status": "passed"
 });
 });
