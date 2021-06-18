@@ -16,6 +16,6 @@ Scenario Outline: User should be able to login with valid credentials and open a
 	Then User should be able to see validate 
 	Examples:
   |username         |password|	|accountTitle|description|initialBalance|accountNumber|contactPerson|phone|internetBankingUrl|
-  |demo@techfios.com|abc123  |  |Savings Account|opening New Account|$50,000|172843|john|263848|www.bofa.com|
+  |demo@techfios.com|abc123  |  |Savings Account|opening New Account|$50,000|172843|john|263848| https://www.bankofamerica.com/|
    
 	

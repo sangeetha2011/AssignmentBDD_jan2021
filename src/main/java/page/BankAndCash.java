@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,6 +20,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+
 
 public class BankAndCash extends BasePage  {
 	 WebDriver driver;
@@ -48,13 +51,14 @@ public class BankAndCash extends BasePage  {
 	WebElement INTERNET_BANKING_URL_FIELD;
 	@FindBy(how = How.XPATH, using = "//button[contains(text(),' Submit')]")
 	WebElement NEW_ACCOUNT_SUBMIT_FIELD;
-	
-   
+	@FindBy(how = How.XPATH, using="//*[@id=\"page-wrapper\"]/div[3]/div[1]")
+	WebElement ACCOUNT_SUCESS;
+  
    public void clickbankandcashButton() throws Throwable {
 
 		BANK_AND_CASH_FIELD.click();
 	 }
-	
+
 	public void clickNewAccountButton() {
 		NEW_ACCOUNT_FIELD.click();
 	}
@@ -98,6 +102,17 @@ public class BankAndCash extends BasePage  {
 	 public String getPageTitle() {
 		  return driver.getTitle();
 		 }
+	 public void  accountSuccessfulAssert() throws InterruptedException {
+			String expected="×\n"
+					+ "Account Created Successfully";
+		 String actual = ACCOUNT_SUCESS.getText();
+		 waitforElement (30, ACCOUNT_SUCESS , driver);
+		 System.out.println(actual);
+	     Assert.assertEquals(expected, actual);
+	     
+		
+	 }
+		
   public void takeScreenshotAtEndOfTest(WebDriver driver) throws IOException {
 		  TakesScreenshot ts = ((TakesScreenshot)driver);
 		  File sourceFile = ts.getScreenshotAs(OutputType.FILE);
@@ -108,4 +123,4 @@ public class BankAndCash extends BasePage  {
 		  FileUtils.copyFile(sourceFile, new File(currentDirectory + "/screenshot/" + label +".png"));
 
 		 }
-}
+ } 

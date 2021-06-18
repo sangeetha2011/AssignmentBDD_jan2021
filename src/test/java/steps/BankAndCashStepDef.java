@@ -2,6 +2,7 @@ package steps;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.After;
@@ -62,7 +63,7 @@ public class BankAndCashStepDef {
 	public void user_clicks_on_new_account() throws Throwable {
 
 		bankandcash.clickNewAccountButton();
-
+		bankandcash.takeScreenshotAtEndOfTest(driver);
 	}
     @When("^User fill up the form entering \"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and clicks submit$")
 	public void user_fill_up_the_form_entering_details(String accountTitle, String description, String initialBalance,
@@ -79,14 +80,13 @@ public class BankAndCashStepDef {
 
 	@Then("^User should be able to see validate$")
 	public void user_should_be_able_to_see_validate() throws Throwable {
-		String expectedTitle = "Accounts- iBilling";
-		String actualTitle = bankandcash.getPageTitle();
-		Assert.assertEquals(expectedTitle, actualTitle);
+		bankandcash.accountSuccessfulAssert();
 		bankandcash.takeScreenshotAtEndOfTest(driver);
+	
 	}
 	@After
 	public void tearDown() {
 		driver.close();
 		driver.quit();
 	}
-}
+	}

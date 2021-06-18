@@ -18,10 +18,10 @@ public class BasePage {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		 js.executeScript("arguments[0].click();", element);
 	   }
-	public  void waitforElement ( int waitTime, By element ,WebDriver driver) {
+	public  void waitforElement ( int waitTime, WebElement element ,WebDriver driver) {
 		
 		WebDriverWait wait = new WebDriverWait(driver,waitTime);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	   }
 	public  void selectElement(WebElement element, String text) {
 		 Select sel = new Select(element);

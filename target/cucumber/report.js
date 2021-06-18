@@ -88,7 +88,7 @@ formatter.examples({
         "172843",
         "john",
         "263848",
-        "www.bofa.com"
+        "https://www.bankofamerica.com/"
       ],
       "line": 19,
       "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials-and-open-a-new-account;;2"
@@ -97,7 +97,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1932657300,
+  "duration": 1903487400,
   "status": "passed"
 });
 formatter.background({
@@ -116,7 +116,7 @@ formatter.match({
   "location": "BankAndCashStepDef.user_is_on_the_techfios_login_page()"
 });
 formatter.result({
-  "duration": 1129713600,
+  "duration": 1039404400,
   "status": "passed"
 });
 formatter.scenario({
@@ -164,7 +164,7 @@ formatter.step({
 });
 formatter.step({
   "line": 15,
-  "name": "User fill up the form entering \"Savings Account\"and\"opening New Account\"and\"$50,000\"and\"172843\"and\"john\"and\"263848\"and\"www.bofa.com\"and clicks submit",
+  "name": "User fill up the form entering \"Savings Account\"and\"opening New Account\"and\"$50,000\"and\"172843\"and\"john\"and\"263848\"and\"https://www.bankofamerica.com/\"and clicks submit",
   "matchedColumns": [
     3,
     4,
@@ -195,35 +195,35 @@ formatter.match({
   "location": "BankAndCashStepDef.user_enters_the_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 150645500,
+  "duration": 161538500,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_click_on_the_signin_button()"
 });
 formatter.result({
-  "duration": 2453016600,
+  "duration": 1240796200,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_should_land_on_the_Dashboard_page()"
 });
 formatter.result({
-  "duration": 445531500,
+  "duration": 627766000,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_clicks_on_the_bank_and_cash()"
 });
 formatter.result({
-  "duration": 153495100,
+  "duration": 187802900,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_clicks_on_new_account()"
 });
 formatter.result({
-  "duration": 783539300,
+  "duration": 885407600,
   "status": "passed"
 });
 formatter.match({
@@ -253,25 +253,25 @@ formatter.match({
       "offset": 108
     },
     {
-      "val": "www.bofa.com",
+      "val": "https://www.bankofamerica.com/",
       "offset": 119
     }
   ],
   "location": "BankAndCashStepDef.user_fill_up_the_form_entering_details(String,String,String,int,String,int,String)"
 });
 formatter.result({
-  "duration": 1289950200,
+  "duration": 1363907200,
   "status": "passed"
 });
 formatter.match({
   "location": "BankAndCashStepDef.user_should_be_able_to_see_validate()"
 });
 formatter.result({
-  "duration": 272130700,
+  "duration": 419228900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 663904600,
+  "duration": 659253300,
   "status": "passed"
 });
 });
